@@ -8,10 +8,12 @@ namespace ApiCodeInside.Controllers
     public class ValuesController : Controller
     {
         // GET: api/<ValuesController>
+
         Calc calc = new Calc();
         [HttpGet("/average")]
 
         public int Function1([FromQuery] int[] nums)
+
         {
             return calc.Average(nums);
         }
@@ -25,9 +27,7 @@ namespace ApiCodeInside.Controllers
         public int Largest([FromQuery] int[] nums)
 
         {
-
             return calc.Largest(nums);
-
         }
 
     }
