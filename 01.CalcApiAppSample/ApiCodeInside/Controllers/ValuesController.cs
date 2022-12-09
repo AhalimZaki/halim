@@ -10,9 +10,10 @@ namespace ApiCodeInside.Controllers
         // GET: api/<ValuesController>
 
         Calc calc = new Calc();
-
         [HttpGet("/average")]
-        public int Myfunc([FromQuery] int[] nums)
+
+        public int Function1([FromQuery] int[] nums)
+
         {
             return calc.Average(nums);
         }
