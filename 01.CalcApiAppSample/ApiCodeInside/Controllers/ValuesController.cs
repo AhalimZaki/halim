@@ -8,33 +8,18 @@ namespace ApiCodeInside.Controllers
     public class ValuesController : Controller
     {
         // GET: api/<ValuesController>
-
-         
-
         Calc calc = new Calc();
-
-
-
         [HttpGet("/average")]
 
-        public int Average([FromQuery] int[] nums)
-
+        public int Function1([FromQuery] int[] nums)
         {
-
             return calc.Average(nums);
-
         }
-
         [HttpGet("/smallest")]
-
         public int Smallest([FromQuery] int[] nums)
-
         {
-
             return calc.Smallest(nums);
-
         }
-
         [HttpGet("/largest")]
 
         public int Largest([FromQuery] int[] nums)
