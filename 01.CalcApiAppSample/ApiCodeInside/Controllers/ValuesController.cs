@@ -12,7 +12,7 @@ namespace ApiCodeInside.Controllers
         Calc calc = new Calc();
 
         [HttpGet("/average")]
-        public int Average([FromQuery] int[] nums)
+        public int Myfunc([FromQuery] int[] nums)
         {
             return calc.Average(nums);
         }
